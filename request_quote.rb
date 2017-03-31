@@ -1,3 +1,5 @@
+require 'dotenv/load'
+
 require 'httparty'
 require 'pry'
 require 'pry-byebug'
@@ -67,7 +69,7 @@ class ParcelPerfect
   end
 end
 
-pp = ParcelPerfect.new(email: 'user@email.tld', password: 'password')
+pp = ParcelPerfect.new(email: ENV['EMAIL'], password: ENV['PASSWORD'])
 
 puts 'Places by Postcode'
 ap pp.places_by_postcode('0002')
