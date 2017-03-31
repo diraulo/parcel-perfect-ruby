@@ -1,34 +1,35 @@
+PATH
+  remote: .
+  specs:
+    parcel_perfect (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    awesome_print (1.7.0)
-    byebug (9.0.6)
-    coderay (1.1.1)
-    dotenv (2.2.0)
-    httparty (0.14.0)
-      multi_xml (>= 0.5.2)
-    method_source (0.8.2)
-    multi_xml (0.6.0)
-    pry (0.10.4)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    pry-byebug (3.4.2)
-      byebug (~> 9.0)
-      pry (~> 0.10)
-    slop (3.6.0)
-    yajl-ruby (1.3.0)
+    diff-lcs (1.3)
+    rake (10.5.0)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  awesome_print
-  dotenv
-  httparty
-  pry
-  pry-byebug
-  yajl-ruby
+  bundler (~> 1.14)
+  parcel_perfect!
+  rake (~> 10.0)
+  rspec (~> 3.0)
 
 BUNDLED WITH
    1.14.6
